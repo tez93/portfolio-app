@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Login />} />
         
         {/* Home page route */}
-        <Route path="/home" element={<Home />} />
+        <Route path="/tejas-portfolio" element={<Home />} />
 
         {/* Redirect any unknown routes back to Login */}
         <Route path="*" element={<Navigate to="/" replace />} />

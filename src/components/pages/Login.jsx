@@ -22,7 +22,7 @@ export default function Login() {
     if (match) {
       setMessage("Login successful");
       setIsSuccess(true);
-      navigate('/home');
+      navigate('/tejas-portfolio');
     } else {
       setMessage("Invalid username and password");
       setIsSuccess(false);
