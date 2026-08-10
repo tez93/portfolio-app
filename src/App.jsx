@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './components/pages/Login';
 import Home from './components/pages/Home';
 import './App.css';
 
@@ -7,7 +8,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* Set Login as the default landing route */}
+        <Route path="/" element={<Login />} />
+        
+        {/* Home page route */}
+        <Route path="/home" element={<Home />} />
+
+        {/* Redirect any unknown routes back to Login */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

@@ -63,19 +63,66 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-<section id="skills">
-  <SectionHeader title="Skills" />
-  <div id="skills-grid">
-    <SkillCard category="Programming" skills={["Java", "SQL"]} />
-    <SkillCard category="Backend" skills={["Spring Boot", "REST APIs", "Microservices"]} />
-    <SkillCard category="Frontend" skills={["HTML", "CSS", "JavaScript", "React"]} />
-    <SkillCard category="Database" skills={["PostgreSQL", "MySQL"]} />
-    <SkillCard category="DevOps" skills={["Azure DevOps", "Docker", "CI/CD", "Git"]} />
-    <SkillCard category="Messaging" skills={["Kafka", "RabbitMQ"]} />
-    <SkillCard category="Tools" skills={["Postman", "Swagger", "Mockito", "JaCoCo"]} />
-    <SkillCard category="Methodologies" skills={["Agile", "Scrum"]} />
-  </div>
-</section>
+        <section id="skills">
+          <SectionHeader title="Skills" />
+          <div id="skills-grid">
+            <SkillCard category="Programming" skills={["Java", "SQL"]} />
+            <SkillCard
+              category="Backend"
+              skills={["Spring Boot", "REST APIs", "Microservices"]}
+            />
+            <SkillCard
+              category="Frontend"
+              skills={["HTML", "CSS", "JavaScript", "React"]}
+            />
+            <SkillCard category="Database" skills={["PostgreSQL", "MySQL"]} />
+            <SkillCard
+              category="DevOps"
+              skills={["Azure DevOps", "Docker", "CI/CD", "Git"]}
+            />
+            <SkillCard category="Messaging" skills={["Kafka", "RabbitMQ"]} />
+            <SkillCard
+              category="Tools"
+              skills={["Postman", "Swagger", "Mockito", "JaCoCo"]}
+            />
+            <SkillCard category="Methodologies" skills={["Agile", "Scrum"]} />
+          </div>
+        </section>
+        {/* Experience Section */}
+        <section id="professional-experience">
+          <SectionHeader title="Professional Experience" />
+          <JobCard
+            title="Accounts Receivable Specialist – Healthcare Operations"
+            date="March 2025 – May 2026"
+            company="3Gen Consulting Services Pvt. Ltd"
+            description="Managed healthcare insurance claims and denial resolution for US healthcare clients in the DME
+billing domain.
+Performed eligibility verification and claim follow-ups with insurance providers to ensure timely
+reimbursements.
+Analyzed claim statuses and payment trends to support efficient revenue cycle management.
+Collaborated with insurance representatives to resolve billing discrepancies and claim denials.
+Maintained HIPAA compliance while handling sensitive patient data"
+          />
+          <JobCard
+            title="Software Developer"
+            date="Aug 2022 – July 2024"
+            company="Nsplus Technologies"
+            description="Developed and maintained RESTful APIs and microservices for the Assisto HR Management platform
+using Java, Spring Boot, PostgreSQL, and MySQL.
+Collaborated with stakeholders and development teams to analyze business requirements and
+implement solutions for employee onboarding, HR verification, project allocation, and timesheet
+workflows.
+Designed and optimized database schemas and integrated RabbitMQ for distributed system
+communication.
+Utilized Azure DevOps CI/CD, Docker, Git, and Agile methodologies to support application
+development and deployment.
+Performed API testing using Postman, documented APIs with Swagger, and developed unit tests
+using Mockito while monitoring code coverage with JaCoCo.
+Participated in requirement analysis, sprint planning, code reviews, and continuous process
+improvements within the software development lifecycle.
+"
+          />
+        </section>
 
         {/* Projects Section */}
         <section id="projects">
