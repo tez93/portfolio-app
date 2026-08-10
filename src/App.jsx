@@ -1,12 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+// ADD THIS LINE BELOW:
+import Home from './components/pages/Home'; 
+
+import './App.css';
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* other routes */}
       </Routes>
     </Router>
   );
