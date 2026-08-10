@@ -84,7 +84,7 @@ export default function Home() {
             title="React Personal Portfolio"
             description="A responsive single-page web application built using React, React Router, reusable components, and custom CSS styling to showcase skills, experience, and projects."
             linkText="View Portfolio Code"
-            linkUrl="https://github.com/tejasgrao/react-portfolio" // Update with your actual GitHub link when hosted
+            linkUrl="https://github.com/tez93/portfolio-app" // Update with your actual GitHub link when hosted
           />
           <ProjectCard
             title="Bridal Website"
