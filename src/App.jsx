@@ -1,14 +1,15 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Login from './components/pages/Login';
-import Home from './components/pages/Home';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-export default function App() {
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/home" element={<Home />} />
-    </Routes>
+    <Router basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* other routes */}
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
