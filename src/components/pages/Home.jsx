@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import passportImg from "../../assets/images/passport.jpg";
 import udemyImg from "../../assets/images/udemy.jpg";
 import testcase from "../../assets/images/testcase.jpg";
+import devops from "../../assets/images/devops.jpg";
  
 // Import Components
 import Navbar from "../Navbar";
@@ -174,6 +175,10 @@ improvements within the software development lifecycle.
           <CertCard
             title="Decoding DevOps"
             description="Currently Pursuing The DevOps course on udemy"
+            topicsCovered="Git, Docker, CI/CD, Linux, AWS Fundamentals"
+            imgSrc={devops}
+            imgAlt="Udemy course pursuing"
+
           />
         </section>
 

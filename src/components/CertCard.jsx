@@ -3,6 +3,7 @@ import React from "react";
 export default function CertCard({
   title,
   description,
+  topicsCovered,
   linkUrl,
   imgSrc,
   imgAlt,
@@ -12,6 +13,7 @@ export default function CertCard({
       <div className="cert-text">
         <h3>{title}</h3>
         <p>{description}</p>
+        <p>{topicsCovered}</p>
         {linkUrl && (
           <a href={linkUrl} target="_blank" rel="noopener noreferrer">
             View Certificate
