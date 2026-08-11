@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 // Import Assets
 import passportImg from "../../assets/images/passport.jpg";
 import udemyImg from "../../assets/images/udemy.jpg";
+import testcase from "../../assets/images/testcase.jpg";
 
 // Import Components
 import Navbar from "../Navbar";
@@ -159,12 +160,14 @@ improvements within the software development lifecycle.
 
           <CertCard
             title="Frontend Development & React.js (Self-Taught)"
-            description="Hands-on learning covering HTML, CSS, JavaScript, and React. Implemented modular components, React Router, state management, and responsive design by building full portfolio applications."
+            description="Hands-on learning covering HTML, CSS, JavaScript, and React. Implemented modular components, React Router, state management, and responsive design by building full portfolio applications. Also added Test cases with 100% coverage using Vitest and React Testing Library."
+            imgSrc={testcase}
+            imgAlt= "testcase coverage report" // <-- Added prop
           />
           <CertCard
             title="Java SE 8 Developer Bootcamp"
             description="Course completed on Java SE 8 Developer Bootcamp on udemy"
-            linkUrl="https://udemy.com"
+            linkUrl="https://ude.my/UC-ba3a77ff-5a84-4a37-9b7b-43cc6fc9e698"
             imgSrc={udemyImg}
             imgAlt="Udemy Course completed certificate"
           />
