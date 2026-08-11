@@ -224,7 +224,7 @@ improvements within the software development lifecycle.
         <p>&copy; 2026 Tejas G Rao. All rights reserved.</p>
         <p>
           <a
-            href="https://github.com"
+            href="https://github.com/tez93/portfolio-app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -238,14 +238,6 @@ improvements within the software development lifecycle.
           >
             LinkedIn
           </a>{" "}
-          |
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
         </p>
       </footer>
     </div>
