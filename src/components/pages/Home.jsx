@@ -6,7 +6,7 @@ import passportImg from "../../assets/images/passport.jpg";
 import udemyImg from "../../assets/images/udemy.jpg";
 import testcase from "../../assets/images/testcase.jpg";
 import devops from "../../assets/images/devops.jpg";
- 
+
 // Import Components
 import Navbar from "../Navbar";
 import SectionHeader from "../SectionHeader";
@@ -124,6 +124,13 @@ Participated in requirement analysis, sprint planning, code reviews, and continu
 improvements within the software development lifecycle.
 "
           />
+
+          <JobCard
+            title="Junior System Administrator  L1 - Chat Support (Part -Time)"
+            date="March 2021 – Nov 2021"
+            company="Diya Systems Pvt Ltd"
+            description="Provided technical support for hosting and server issues through live chat. Diagnosed database connectivity issues and assisted with system troubleshooting. Maintained documentation of technical issues and resolutions."
+          />
         </section>
 
         {/* Projects Section */}
@@ -163,7 +170,7 @@ improvements within the software development lifecycle.
             title="Frontend Development & React.js (Self-Taught)"
             description="Hands-on learning covering HTML, CSS, JavaScript, and React. Implemented modular components, React Router, state management, and responsive design by building full portfolio applications. Also added Test cases with 100% coverage using Vitest and React Testing Library."
             imgSrc={testcase}
-            imgAlt= "testcase coverage report" 
+            imgAlt="testcase coverage report"
           />
           <CertCard
             title="Java SE 8 Developer Bootcamp"
@@ -178,7 +185,6 @@ improvements within the software development lifecycle.
             topicsCovered="Git, Docker, CI/CD, Linux, AWS Fundamentals"
             imgSrc={devops}
             imgAlt="Udemy course pursuing"
-
           />
         </section>
 
