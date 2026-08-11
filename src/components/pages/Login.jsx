@@ -42,35 +42,62 @@ export default function Login() {
   };
 
   return (
-    <div id="login-container" style={{ padding: "4rem 2rem", textAlign: "center" }}>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin} style={{ maxWidth: "400px", margin: "0 auto" }}>
-        <p>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      
+      {/* Header / Navbar on Login Page */}
+      <header style={{ justifyContent: "center", textAlign: "center" }}>
+        <h1 style={{ fontSize: "1.5rem" }}>Portfolio Login Page</h1>
+      </header>
+
+      {/* Main Login Content */}
+      <main 
+        id="login-container" 
+        style={{ 
+          flex: 1, 
+          display: "flex", 
+          flexDirection: "column", 
+          alignItems: "center", 
+          justifyContent: "center", 
+          padding: "2rem" 
+        }}
+      >
+        <form onSubmit={handleLogin} style={{ width: "100%", maxWidth: "380px" }}>
+          <div style={{ marginBottom: "1rem" }}>
+            <h4 style={{ marginBottom: "0.4rem", textAlign: "left" }}>Username</h4>
+            <input
+              type="text"
+              placeholder="Please Enter The Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div style={{ marginBottom: "1rem" }}>
+            <h4 style={{ marginBottom: "0.4rem", textAlign: "left" }}>Password</h4>
+            <input
+              type="password"
+              placeholder="Please Enter The Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <button type="submit" id="login-btn">Login</button>
+        </form>
+
+        <p style={{ marginTop: "1rem" }}>
+          <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
         </p>
-        <p>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </p>
-        <button type="submit" id="login-btn">Login</button>
-      </form>
-      <p style={{ marginTop: "1rem" }}>
-        <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
-      </p>
-      {message && (
-        <p style={{ color: isSuccess ? 'green' : 'red', fontWeight: 'bold' }}>
-          {message}
-        </p>
-      )}
+
+        {message && (
+          <p style={{ color: isSuccess ? 'green' : 'red', fontWeight: 'bold', marginTop: "0.8rem" }}>
+            {message}
+          </p>
+        )}
+      </main>
+
+      {/* Footer Pinned to Bottom */}
+      <footer>
+        <p>&copy; 2026 Tejas G Rao. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
