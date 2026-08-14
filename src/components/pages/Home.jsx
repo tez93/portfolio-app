@@ -17,15 +17,15 @@ import CertCard from "../CertCard";
 import EducationCard from "../EducationCard";
 
 export default function Home() {
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     console.log("Welcome to Tejas G Rao's Portfolio!");
   }, []);
 
-  const handleLogout = () => {
-    navigate("/");
-  };
+ const handleLogout = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
   return (
     <div>
@@ -143,16 +143,16 @@ improvements within the software development lifecycle.
             linkUrl="https://github.com/tez93/portfolio-app" // Update with your actual GitHub link when hosted
           />
           <ProjectCard
-            title="Bridal Website"
-            description="A web application that allows users to book appointments for marriage makeup using JavaScript functionality."
-            linkText="Deepthi's Bridal Make"
-            linkUrl="https://deepthis-beauty-canvas.vercel.app/"
+            title="Beginner Calculator App"
+            description="A functional single-page calculator built with React and custom CSS. Features a dynamic layout, state-driven math operations (+, -, ×, ÷), division-by-zero validation, and step-by-step history tracking."
+            linkText="View Calculator Code"
+            linkUrl="https://github.com/tez93/calculator-app"
           />
           <ProjectCard
-            title="Dental Clinic"
-            description="A web application that allows users to book Dental Appointments with doctors using JavaScript functionality."
-            linkText="Keerthi Dental Clinic"
-            linkUrl="https://keerthidentalclinic.vercel.app/"
+            title="React To-Do Task Manager"
+            description="An interactive task management web application built using React hooks (useState). Demonstrates core CRUD functionality including task creation, dynamic array rendering using JavaScript .map(), and item deletion via array filtering."
+            linkText="View To-Do App Code"
+            linkUrl="https://github.com/tez93/todoapp"
           />
           <ProjectCard
             title="Assisto HRMS Web Application"
