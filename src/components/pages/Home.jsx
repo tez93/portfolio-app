@@ -6,6 +6,7 @@ import passportImg from "../../assets/images/passport.jpg";
 import udemyImg from "../../assets/images/udemy.jpg";
 import testcase from "../../assets/images/testcase.jpg";
 import devops from "../../assets/images/devops.jpg";
+import Tejas_G_Rao_React_Developer_Resume from "../../assets/Tejas_G_Rao_React_Developer_Resume.pdf";
 
 // Import Components
 import Navbar from "../Navbar";
@@ -17,15 +18,13 @@ import CertCard from "../CertCard";
 import EducationCard from "../EducationCard";
 
 export default function Home() {
-  
-
   useEffect(() => {
     console.log("Welcome to Tejas G Rao's Portfolio!");
   }, []);
 
- const handleLogout = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+  const handleLogout = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -143,7 +142,7 @@ improvements within the software development lifecycle.
             linkUrl="https://github.com/tez93/portfolio-app" // Update with your actual GitHub link when hosted
           />
           <ProjectCard
-            title="Beginner Calculator App"
+            title="Calculator App"
             description="A functional single-page calculator built with React and custom CSS. Features a dynamic layout, state-driven math operations (+, -, ×, ÷), division-by-zero validation, and step-by-step history tracking."
             linkText="View Calculator Code"
             linkUrl="https://github.com/tez93/calculator-app"
@@ -220,6 +219,19 @@ improvements within the software development lifecycle.
             <div className="contact-item">
               <strong>Address:</strong>
               <span>Mysore, Karnataka, India</span>
+            </div>
+            <div className="contact-item" style={{ marginTop: "0.8rem" }}>
+              <a
+                href={Tejas_G_Rao_React_Developer_Resume}
+                download="Tejas_G_Rao_React_Developer_Resume.pdf"
+                className="resume-blue-btn"
+              >
+                Download Resume
+              </a>
+              <a href={Tejas_G_Rao_React_Developer_Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-blue-btn">View Resume</a>
             </div>
           </div>
         </section>

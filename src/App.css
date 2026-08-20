@@ -453,6 +453,27 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
+/* Download resume btn  */
+.contact-card a.resume-blue-btn{
+  display: inline-block;
+  background-color: #007bff; /* Bright blue match */
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.contact-card a.resume-blue-btn:hover {
+  background-color: #0056b3;
+
+}
 /* Login Container Styles */
 #login-container {
   display: flex;
