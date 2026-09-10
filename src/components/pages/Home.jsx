@@ -44,15 +44,15 @@ export default function Home() {
           />
           <div>
             <p>
-              Software Engineer with 2+ years of experience in backend and
-              frontend development using Java, Spring Boot, REST APIs,
-              Microservices, PostgreSQL, React.js, JavaScript, and Azure DevOps.
-              Experienced in building scalable enterprise applications,
-              responsive user interfaces, and collaborating with
-              cross-functional teams. Expanding into full-stack development
-              through self-directed learning, mastering HTML, CSS, JavaScript
-              (ES6+), and React to build dynamic, responsive web applications
-              like this portfolio.
+              Software Engineer with 2+ years of software development
+              experience, primarily focused on Java and Spring Boot backend
+              development, with additional experience in healthcare operations.
+              Hands-on experience developing REST APIs and backend services in a
+              microservices-based HRMS SaaS platform. Experienced with Spring
+              Data JPA/Hibernate, PostgreSQL, RabbitMQ, JUnit, Mockito, Docker,
+              and Azure DevOps CI/CD. Currently expanding skills in React.js,
+              frontend development, and AWS Amazon Connect contact center
+              solutions.
             </p>
             <p>
               Currently learning AWS Amazon Connect and cloud-based contact
@@ -67,111 +67,141 @@ export default function Home() {
           <SectionHeader title="Skills" />
           <div id="skills-grid">
             <SkillCard
-              category="Programming"
-              skills={["Java", "SQL", "Python"]}
+              category="Backend"
+              skills={[
+                "Java 17",
+                "Java 21",
+                "Spring Boot",
+                "REST APIs",
+                "Microservices",
+                "Spring Data JPA",
+                "Hibernate",
+                "JPA Queries.",
+              ]}
+            />
+            <SkillCard category="Database" skills={["PostgreSQL"]} />
+            <SkillCard category="Messaging" skills={["RabbitMQ"]} />
+            <SkillCard
+              category="Testing & API Tools"
+              skills={["JUnit", "Mockito", "Postman", "Swagger"]}
             />
             <SkillCard
-              category="Backend"
-              skills={["Spring Boot", "REST APIs", "Microservices"]}
+              category="DevOps & Tools"
+              skills={[
+                "Docker",
+                "Git",
+                "Azure Repos",
+                "Azure Boards",
+                "Azure Pipelines",
+                "CI/CD",
+                "Build & Release Pipelines",
+              ]}
             />
             <SkillCard
               category="Frontend"
-              skills={["HTML", "CSS", "JavaScript", "React"]}
+              skills={["HTML", "CSS", "JavaScript", "React.js"]}
             />
-            <SkillCard category="Database" skills={["PostgreSQL", "MySQL"]} />
             <SkillCard
-              category="DevOps"
+              category="AWS"
               skills={[
-                "Azure DevOps",
-                "Docker",
-                "CI/CD",
-                "Git",
-                "AWS",
-                "AWS CONNECT",
+                "Amazon Connect",
+                "Contact Flows",
+                "IVR",
+                "Queues",
+                "Routing Profiles",
+                "AWS Lambda",
               ]}
             />
-            <SkillCard category="Messaging" skills={["Kafka", "RabbitMQ"]} />
-            <SkillCard
-              category="Tools"
-              skills={["Postman", "Swagger", "Mockito", "JaCoCo"]}
-            />
-            <SkillCard category="Methodologies" skills={["Agile", "Scrum"]} />
           </div>
         </section>
         {/* Experience Section */}
         <section id="professional-experience">
           <SectionHeader title="Professional Experience" />
           <JobCard
-            title="Accounts Receivable Support Specialist – Healthcare Operations"
+            title="Accounts Receivable Support Specialist"
             date="March 2025 – May 2026"
-            company="3Gen Consulting Services Pvt. Ltd"
-            description="Utilized Azure DevOps CI/CD pipelines to automate build and deployment processes. 
-            Designed and optimized database schemas using PostgreSQL.
-            Implemented messaging integration using Kafka and RabbitMQ for distributed system
-communication.
-Analyzed claim statuses and payment trends to support efficient revenue cycle management .
-Collaborated with insurance clients to resolve billing discrepancies and claim denials on the Health care systems Using REST API's.
-Maintained HIPAA compliance while handling sensitive patient data"
-          />
+            company="3Gen Consulting Services / Forefront Healthcare"
+          >
+            <ul className="job-bullet-list">
+              <li>
+                Performed accounts receivable follow-up and supported healthcare
+                revenue-cycle operations.
+              </li>
+              <li>
+                Processed insurance claims, including claim submission and
+                resubmission activities.
+              </li>
+              <li>
+                Performed eligibility and benefits verification and supported
+                denial management and follow-up.
+              </li>
+              <li>
+                Prepared operational reports and maintained spreadsheets using
+                Microsoft Excel; worked with AdvancedMD and ComitMD.
+              </li>
+            </ul>
+          </JobCard>
           <JobCard
             title="Software Developer"
             date="Aug 2022 – July 2024"
             company="Nsplus Technologies"
-            description="Developed and maintained RESTful APIs and microservices for the Assisto HR Management platform
-using Java, Spring Boot, PostgreSQL, and MySQL.
-Collaborated with stakeholders and development teams to analyze business requirements and
-implement solutions for employee onboarding, HR verification, project allocation, and timesheet
-workflows.
-Designed and optimized database schemas and integrated RabbitMQ for distributed system
-communication.
-Utilized Azure DevOps CI/CD, Docker, Git, and Agile methodologies to support application
-development and deployment.
-Performed API testing using Postman, documented APIs with Swagger, and developed unit tests
-using Mockito while monitoring code coverage with JaCoCo.
-Participated in requirement analysis, sprint planning, code reviews, and continuous process
-improvements within the software development lifecycle.
-"
-          />
+          >
+            <ul className="job-bullet-list">
+              <li>
+                Developed and enhanced REST APIs using Java 17/21, Spring Boot,
+                Spring Data JPA/Hibernate, and PostgreSQL for an HRMS SaaS
+                platform.
+              </li>
+              <li>
+                Implemented backend business logic for Company Onboarding,
+                Employee Onboarding, and Employee Management modules.
+              </li>
+              <li>
+                Developed backend functionality for asset approval workflows
+                following employee onboarding, including approval/rejection and
+                asset status updates.
+              </li>
+              <li>
+                Worked on individual services within a microservices
+                architecture, with basic RabbitMQ integration/support.
+              </li>
+              <li>
+                Tested APIs using Postman and Swagger and wrote unit tests using
+                JUnit and Mockito, including validation of error scenarios.
+              </li>
+              <li>
+                Used Docker, Git, Azure Repos, Azure Boards, and Azure Pipelines
+                for development, task tracking, code reviews, CI/CD, and
+                deployment through existing pipelines.
+              </li>
+              <li>
+                Resolved API bugs and production issues while participating in
+                Agile/Scrum ceremonies and working from user stories and
+                requirements.
+              </li>
+            </ul>
+          </JobCard>
+          "
         </section>
 
         {/* Projects Section */}
         <section id="projects">
           <SectionHeader title="Projects" />
           <ProjectCard
-            title="React Personal Portfolio"
-            description="A responsive single-page web application built using React, React Router, reusable components, and custom CSS styling to showcase skills, experience, and projects."
-            linkText="View Portfolio Code"
-            linkUrl="https://github.com/tez93/portfolio-app" // Update with your actual GitHub link when hosted
+            title="Amazon Connect Contact Center"
+            description="Created and configured an Amazon Connect instance, including users/agents and contact numbers. Built contact flows and configured IVR menus, queues, routing profiles, and prompts/audio. Implemented a basic AWS Lambda integration to perform a backend action from an Amazon Connect contact flow. Configured contact-center and call-routing workflows through AWS documentation and hands-on implementation."
           />
           <ProjectCard
-            title="Calculator App"
-            description="A functional single-page calculator built with React and custom CSS. Features a dynamic layout, state-driven math operations (+, -, ×, ÷), division-by-zero validation, and step-by-step history tracking."
-            linkText="View Calculator Code"
-            linkUrl="https://github.com/tez93/calculator-app"
-          />
-          <ProjectCard
-            title="React To-Do Task Manager"
-            description="An interactive task management web application built using React hooks (useState). Demonstrates core CRUD functionality including task creation, dynamic array rendering using JavaScript .map(), and item deletion via array filtering."
-            linkText="View To-Do App Code"
-            linkUrl="https://github.com/tez93/todoapp"
-          />
-          <ProjectCard
-            title="Assisto HRMS Web Application"
-            description="Developed and maintained RESTful APIs and microservices for the Assisto."
-            linkText="Assisto"
-            linkUrl="https://assisto.com"
-          />
-          <ProjectCard
-            title="AWS Connect (Ongoing Project)"
-            description="Currently learning AWS Amazon Connect and cloud-based contact center technologies, with a focus on IVR, contact flows, call routing, queues, and AWS service integrations."
-            linkText=""
-            linkUrl=""
+            title="Personal Portfolio Website"
+            description="Built and deployed a responsive personal portfolio website using HTML, CSS, JavaScript, and React.js. Used Git/GitHub for source-code management and deployed the website through GitHub Pages. Implemented responsive layouts for desktop and mobile viewing."
+            linkText="View Portfolio"
+            linkUrl="https://tez93.github.io/portfolio-app/#/tejas-portfolio"
           />
         </section>
 
         {/* Certifications Section */}
         <section id="certifications">
-          <SectionHeader title="Certifications & Training" />
+          <SectionHeader title="ADDITIONAL LEARNING" />
 
           <CertCard
             title="Frontend Development & React.js (Self-Taught)"
@@ -181,21 +211,21 @@ improvements within the software development lifecycle.
           />
           <CertCard
             title="Java SE 8 Developer Bootcamp"
-            description="Course completed on Java SE 8 Developer Bootcamp on udemy"
+            description="Completed Udemy course with certificate."
             linkUrl="https://ude.my/UC-ba3a77ff-5a84-4a37-9b7b-43cc6fc9e698"
             imgSrc={udemyImg}
             imgAlt="Udemy Course completed certificate"
           />
           <CertCard
             title="Decoding DevOps"
-            description="Currently Pursuing The DevOps course on udemy"
+            description=" Currently pursuing Udemy training."
             topicsCovered="Git, Docker, CI/CD, Linux, AWS Fundamentals"
             imgSrc={devops}
             imgAlt="Udemy course pursuing"
           />
           <CertCard
             title="AWS CONNECT"
-            description="Currently Pursuing The AWS CONNECT (Self-Taught)"
+            description="Self-taught through AWS documentation and hands-on implementation. Currently Pursuing The AWS CONNECT."
             topicsCovered="Connect Flow,Contact,Channels,Amazon Connect Architecture, Connect Instance,Contact Flow, Flow Blocks,Lambda,Queues,Routing Profile,Prompts and Hours of Operation"
             imgSrc={Awsconnect}
             imgAlt="Awsconnect Pursuing"
