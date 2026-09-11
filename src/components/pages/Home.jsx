@@ -255,7 +255,7 @@ export default function Home() {
           <div className="contact-card">
             <div className="contact-item">
               <strong>Phone:</strong>
-              <a href="tel:+919876543210">+91 973882634</a>
+              <a href="tel:+919738826364">+91 9738826364</a>
             </div>
             <div className="contact-item">
               <strong>Email:</strong>
