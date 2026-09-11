@@ -181,7 +181,7 @@ export default function Home() {
               </li>
             </ul>
           </JobCard>
-          "
+          
         </section>
 
         {/* Projects Section */}
@@ -259,7 +259,7 @@ export default function Home() {
             </div>
             <div className="contact-item">
               <strong>Email:</strong>
-              <a href="mailto:tejasgrao@example.com">tejasgrao@gmail.com</a>
+              <a href="mailto:tejasgrao@example.com">tejasgrock@gmail.com</a>
             </div>
             <div className="contact-item">
               <strong>Address:</strong>
